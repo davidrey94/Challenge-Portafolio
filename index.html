@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Página web</title>
+    <link rel="stylesheet" href="style.css">+
+</head>
+<body>
+    <header class="Cabecera">
+        <div class="imagen__logo">
+            <img src="./assets/dr_logo.jpg" alt="Imagen Logo David Rey">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Sobre-mi">Sobre mi</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Formacion">Formación</a></li>
+            </ul>
+        </nav>
+       <a href="#Contacto" class="btn"><button>Contacto</button></a>
+
+       <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+        
+        <div class="overlay" id="menu_movil">
+           <div onclick="closeNav()" href="" class="close">&times;</div>
+            <div class="overlay-content">
+                <a href="#Sobre-mi">Sobre mi</a>
+                <a href="#Habilidades">Habilidades</a>
+                <a href="#Formacion">Formación</a>
+                <a href="#Contacto">Contacto</a>
+
+            </div>
+        </div>
+
+    </header>
+
+    <script type="text/javascript" src="nav.js"></script>
+
+    <!--------------------- Sección de Presentación----------------- -->
+    <section class="presentacion">
+        <figure>
+            <img class="presentacion__foto" src="assets/Foto__perfil__David.jpg" alt="Foto de perfil">
+            <div class="capa">
+                <h2 class="presentacion__titulo">Hola, mi nombre es David Rey e impacto vidas a través de un corte de cabello</h2>
+                <p class="presentacion__subtitulo">"¡Hola! Soy barbero profesional graduado del SENA, con formación continua en técnicas del mercado. Además, soy bilingüe y participo en el  emocionante proyecto Oracle ONE en Alura Latam</p>
+                </figure>
+                <ul class="redes">
+                <li class="redes__git"><a href="https://github.com/davidrey94">Github <img src="assets/logo__git.ico" alt="Logo Github"></a></li>
+                <li class="redes__insta"><a href="https://www.instagram.com/davidacr17">Instagram <img src="assets/logo__insta.ico" alt="Logo Instagram"></a></li> 
+            </ul>
+    </section>
+          <!--------------------- Sección de Presentación Sobre mi----------------- -->  
+    <section class="Sobre-mi" id="Sobre-mi">
+        <h2 class="sobre-mi__titulo">Sobre mí</h2>
+        <p class="sobre-mi__texto">Soy David Rey, barbero profesional con siete años de experiencia. Me gradué en el SENA, donde obtuve mi título en barbería, y complemento con una constante actualización en tendencias de la belleza. Mi enfoque se centra en la asesoría de imagen, garantizando la satisfacción plena de mis clientes. Además, soy bilingüe, certificado por el Centro Colombo Americano, lo que me ha permitido ofrecer mis servicios a extranjeros sin que exista una barrera idiomática entre los dos. Tuve el honor de participar en el show de peluquería internacional más grande del mundo. Fue una experiencia que me permitió no solo demostrar mis habilidades y conectar con profesionales de diversos campos para abrir las puertas a ofertas laborales en distintos países sino que me permitió retarme a mi mismo en cuanto a mis capacidades técnicas. Ahora me encuentro estudiando con la academía Alura Latam, en su programa. oracle next education, en donde me estoy formando como desarrollador front-end, con lo cual espero fusionarlo con mi profesión y poder darle un impulso extra a mi perfil profesional.</p>>
+    </section >
+
+    <section class="habilidades" id="Habilidades"></section>
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/html_logo.ico" alt="HTML">
+                <p class="habilidades__nombre">HTML 5</p>
+            </li>
+
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/J.s_logo.ico" alt="JavaScript">
+                <p class="habilidades__nombre">JavaScript</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/css_logo.ico" alt="CSS">
+                <p class="habilidades__nombre">CSS</p>
+            </li>
+        </ul>
+    </section>
+
+     <!--------------------- Sección de Presentación Sobre mi----------------- -->  
+
+    <section class="formacion" id="Formacion"></section>
+        <h2 class="formacion__titulo">Formación académica</h2>
+        <ul class="formacion__lista">
+            <li class="formacion__elemento">
+                <img class="formacion__icono__sena" src="assets/Sena_logo.jpg" alt="SENA">
+                <div>
+                    <h3 class="formacion__nombre">Técnico profesional en peluquería</h3>
+                </div>
+            </li>
+            <li class="formacion__elemento">
+                <img class="formacion__icono__alura" src="assets/alura_logo.png" alt="Alura">
+                <div>
+                    <h3 class="formacion__nombre">En curso-Formación front-end</h3>
+                </div>
+            </li>
+            <li class="formacion__elemento">
+                <img class="formacion__icono__colombo" src="assets/Logo_colombo.jpg" alt="Logo Colombo">
+                <div>
+                    <h3 class="formacion__nombre">Inglés</h3>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Sección de Contacto -->
+
+    
+    <section class="contacto" id="Contacto">
+        <h3 class="titulo__contacto">Formulario de contacto</h3>
+         <div class="contenedor__contacto">
+                 <form class="informacio_contacto" target="_blank" action="https://formsubmit.co/davidacr17@gmail.com" 
+             method="POST">
+            <div class="cajas" >
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" id="nombre">
+            </div>
+            <div class="cajas">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="Ingrese su correo" id="correo">
+            </div>
+            <div class="cajas">
+                <label for="telefono">Telefono</label>
+                <input type="tel" placeholder="Telefono" id="telefono">
+            </div>
+           <div class="cajas">
+                <label for="message">Mensaje</label>
+                <textarea placeholder="Mensaje" class="caja_texto" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+                 </form>
+        </div>
+        
+     </section>
+        
+
+
+</body>
+
+</html>
